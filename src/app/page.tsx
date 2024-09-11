@@ -5,6 +5,7 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { ProfileImage } from "@/components/ui/profile";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -31,21 +32,26 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+              <Avatar className="size-36 border">
+                <ProfileImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
         </div>
       </section>
+      <BlurFade delay={BLUR_FADE_DELAY * 3}>
+        <Badge className="w-56 text-lg">{"Download Resume 🧾"}</Badge>
+      </BlurFade>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
+            {
+              "I’m a **Front-End Developer** with **2 years** of experience in crafting dynamic, user-centric web applications. Currently working as a Software Developer at **Accolite Digital**, I specialize in **React, Angular, JavaScript, Html5 and Css3.** I have successfully delivered solutions for clients like **FedEx and Juspay**, building **interactive dashboards**, implementing **complex functionalities**, and resolving challenging bugs. I’m passionate about turning creative ideas into **seamless and engaging user experiences.**"
+            }
           </Markdown>
         </BlurFade>
       </section>
