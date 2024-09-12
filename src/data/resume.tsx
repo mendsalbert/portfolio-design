@@ -2,16 +2,16 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "John Doe",
-  initials: "DV",
+  name: "K S Saivaibhav",
+  initials: "KS",
   url: "https://dillion.io",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Passionate Front-End Developer 🚀 turning ideas into interactive experiences, one pixel at a time! ✨",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/me.png",
+    "I’m a Front-End Developer with 2 years of experience in crafting dynamic, user-centric web applications. Currently working as a Software Developer at Accolite Digital, I specialize in React, JavaScript, HTML, CSS, and Angular. I have successfully delivered solutions for clients like FedEx and Juspay, building interactive dashboards, implementing complex functionalities, and resolving challenging bugs. I’m passionate about turning creative ideas into seamless and engaging user experiences.",
+  avatarUrl: "/pic.png",
   skills: [
     "React",
     "Next.js",
@@ -30,21 +30,19 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "saivaibhavks2022@gmail.com",
+    tel: "+91 9354738597",
     social: {
       GitHub: {
         name: "GitHub",
         url: "https://dub.sh/dillion-github",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://dub.sh/dillion-linkedin",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       X: {
